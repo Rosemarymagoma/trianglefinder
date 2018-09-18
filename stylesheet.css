@@ -1,0 +1,82 @@
+body {
+  color: teal;
+  background-color: lightgray;
+  font-weight: bold;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeSbFmn04D-iwhITss5Mte8a6VFMNR4ncHRLuvu3nwvqHPcLAL');
+  background-repeat:
+  background-size: cover;
+  float:none;
+  background-size: contain;
+  background-clip: content-box;
+  background-position: left;
+  border: 6px outset;
+  border-bottom: 60px;
+  text-align: center;
+  break-inside: auto;
+  animation: mymove 5s infinite;
+
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+  /* Code for old Chrome, Safari and Opera */
+  @-webkit-keyframes mymove {
+      from {background-color: aqua;}
+      to {background-color: teal;}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+      from {background-color: aqua;}
+      to {background-color: teal;}
+  }
+
+};
+
+h1{
+  text-align:center;
+  color: teal;
+  font-family:serif;
+}
+p {
+  text-align:right;
+  border-width: thick;
+  border-right-style: ridge;
+  font-style: oblique;dd
+}
+  .form-group {
+  font-style:italic;
+  color: sea;
+  text-align: center;
+  background-color: aqua;
+  display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 200px;
+
+}
+#triangle{
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: maroon;
+}
+
+
+
+
+
+
+
+
+#element { clip-path: polygon(x1 y1, x2 y2, x3 y3, ...); }
+
+#element { clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%); }
+
+#element { clip-path: url("#clip-shape"); }
+
+#element {
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
+  clip-path: polygon(0 100%, 0 0, 100% 0, 80% 100%);
+  -webkit-clip-path: url("#clip-shape"); /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape");
+}
